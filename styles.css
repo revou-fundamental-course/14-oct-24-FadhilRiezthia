@@ -1,0 +1,57 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    padding: 30px;
+}
+
+.logo-icon {
+     height: 50px;
+     width: 50px;
+     background-image: url(assets/logolorem.jpg);
+     background-size: cover;
+     background-position: center;
+     border-radius: 50%;
+}
+
+.photo-banner{
+    min-height: 400px;
+    min-width: 800px;
+    background-image: url(assets/banner1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-image{
+    display: flex;
+}
+
+.column{
+    flex: none;
+    background-size: cover;
+    border-radius: 50%;
+    padding: 10px; 
+}
+
+.text-below-img{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+section  {
+    border: 1px solid;
+    padding: 70px;
+}
+
+nav {
+    display: flex;
+    
+}
+
+nav>a {
+    border: 1px solid;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
