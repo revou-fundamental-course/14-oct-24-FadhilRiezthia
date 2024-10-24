@@ -28,9 +28,20 @@
             </header>
 
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Ini Latihan pertama </p>
                 
-                <div class="photo-banner"></div>
+                <div class="photo-banner slide">
+                    <div class="banner1"></div>
+                </div>
+                <div class="photo-banner slide">
+                    <div class="banner2"></div>
+                </div>
+                <div class="photo-banner slide">
+                    <div class="banner3"></div>
+                </div>
+
+                <button class="button left black" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button right black" onclick="plusDivs(1)">&#10095;</button>
                 
             </article>
         </section>
@@ -47,13 +58,28 @@
                         <div class="text-below-img">Jakarta</div>
                     </div>
                     <div class="column">
-                        <img src="assets/profile2.jpg" alt="profile1" style="height: 100px; width: 100px; background-size: cover; border-radius: 50%; border: 1px solid; float: right;">
+                        <img src="assets/profile2.jpg" alt="profile1" style="height: 100px; width: 100px; background-size: cover; border-radius: 50%; border: 1px solid; float: left;">
                         <div class="text-below-img">Bandung</div>
                     </div>
                     <div class="column">
-                        <img src="assets/profile3.png" alt="profile1" style="height: 100px; width: 100px; background-size: cover; border-radius: 50%; border: 1px solid; float: right;">
+                        <img src="assets/profile3.png" alt="profile1" style="height: 100px; width: 100px; background-size: cover; border-radius: 50%; border: 1px solid; float: left;">
                         <div class="text-below-img">Tanggerang</div>
                     </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="section-portofolio">
+            <header>
+                <h1>Portofolio</h1>
+            </header>
+            <article>
+                <div class="portofolio-explain">
+                    <div>
+                        <img src="assets/portofolio.png" alt="portofolio" class="portofolio" style="height: 200px; width: 200px; background-size: cover; border-radius: 50%; padding: 20px; float: left;">
+                        <div class="text-below-img">M. Hafiyyan Fadhil R.</div>
+                    </div>
+                    <p style="display: flex;">Halo, nama saya M. Hafiyyan Fadhil R. Saya adalah seorang fresh graduate yang saat ini sedang mencari pekerjaan dan menambah ilmu. Saya graduate dari bidang Informatika di Universitas Pembangunan Nasional Veteran Jakarta. Selama kuliah, saya telah mempelajari berbagai topik penting dalam bidang ini, seperti pemrograman, algoritma, basis data, jaringan komputer, dan kecerdasan buatan. Saya sangat tertarik dengan bagaimana teknologi dapat digunakan untuk memecahkan masalah-masalah nyata dan meningkatkan kualitas hidup. Di luar kegiatan akademis, saya aktif dalam beberapa proyek pengembangan perangkat lunak dan sering mengikuti seminar serta workshop untuk terus mengembangkan keterampilan saya. Saya percaya bahwa dengan kombinasi pengetahuan teoritis dan pengalaman praktis, saya bisa berkontribusi secara signifikan dalam industri teknologi.</p>
                 </div>
             </article>
         </section>
@@ -62,13 +88,50 @@
             <header>
                 <h1>Message Us</h1>
             </header>
+
+            <div class="message-container">
+                <form>
+                    <div class="form-input">
+                        <div>
+                            <label for="input-username">Username</label>
+                            <input id="input-username" type="text" >
+                        </div>
+                        <div>
+                            <label for="datetime-local">Tanggal Lahir</label>
+                            <input id="date-birth" type="datetime-local" >
+                        </div>
+                        <div>
+                            <label for="jenis-kelamin">Jenis Kelamin</label>
+                            <div id="gender-choice">
+                                <input id="laki-laki" type="radio" value="laki-laki" name="gender">
+                                <label for="laki-laki">Laki-Laki</label>
+                                <input type="radio" id="perempuan" value="perempuan" name="gender">
+                                <label for="perempuan">Perempuan</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message">Pesan</label>
+                            <input id = "message" type="text">
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="validateForm()">Submit</button>
+
+                </form>
+
+                <div>
+                    <p>Output: <span id="output"></span> </p>
+                </div>
+                
+            </div>
         </section>
 
-        <section id="section-portofolio">
-            <p></p>
-        </section>
+        
     </main>
 
-    <footer></footer>
+    <footer>Created by Fadhil</footer>
+
+    <script src="jss/script.js"></script>
+
 </body>
 </html>

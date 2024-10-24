@@ -16,11 +16,73 @@
 }
 
 .photo-banner{
-    min-height: 400px;
-    min-width: 800px;
+    height: auto;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide {
+    display:none;
+}
+
+.banner1{
+    max-height: 400px;
+    height: 400px;
+    min-height: 100px;
+    min-width: 200px;
+    width: auto;
     background-image: url(assets/banner1.png);
     background-size: cover;
     background-position: center;
+}
+
+.banner2{
+    max-height: 400px;
+    height: 400px;
+    min-height: 100px;
+    min-width: 200px;
+    width: auto;
+    background-image: url(assets/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner3{
+    max-height: 400px;
+    height: 400px;
+    min-height: 100px;
+    min-width: 200px;
+    width: auto;
+    background-image: url(assets/banner3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.left{
+    position:absolute;
+    top:70%;
+    left:5%;
+    transform:translate(0%,-50%)
+    ;-ms-transform:translate(-0%,-50%)
+}
+
+.right{
+    position:absolute;
+    top:70%;
+    right:5%;
+    transform:translate(0%,-50%)
+    ;-ms-transform:translate(0%,-50%)
+}
+
+.black,.black:hover{
+    color:#fff!important;
+    background-color:#000!important
+}
+
+.button:hover{
+    color:#000!important;
+    background-color:#ccc!important
 }
 
 .profile-image{
@@ -39,9 +101,37 @@
     text-align: center;
 }
 
+.portofolio-explain{
+
+}
+
+.message-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: auto;
+}
+
+#output{
+    margin: 0px;
+}
+
+#message{
+    height:50px;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+
 section  {
     border: 1px solid;
     padding: 70px;
+}
+
+article{
+    padding: auto;
 }
 
 nav {
@@ -54,4 +144,46 @@ nav>a {
     padding: 8px;
     text-decoration: none;
     color: black;
+}
+
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    border: 1px solid;
+}
+
+@media only screen and (max-width: 480px){
+    .main-header {
+        flex-direction: column;
+    }
+    .banner1{
+        max-height: 400px;
+        height: auto;
+        min-height: 100px;
+        min-width: 200px;
+        width: auto;
+    }
+    
+    .banner2{
+        max-height: 400px;
+        height: auto;
+        min-height: 100px;
+        min-width: 200px;
+        width: auto;
+    }
+    
+    .banner3{
+        max-height: 400px;
+        height: auto;
+        min-height: 100px;
+        min-width: 200px;
+        width: auto;
+    }
+    .profile-image{
+        flex-direction: column;
+    }
+    .message-container{
+        flex-direction: column;
+    }
 }
